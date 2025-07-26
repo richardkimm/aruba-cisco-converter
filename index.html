@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aruba to Cisco Config Converter</title>
+  <title>Aruba ↔ Cisco Config Converter</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Aruba to Cisco Config Converter</h1>
-    <textarea id="input" placeholder="Paste Aruba config here..."></textarea>
+    <h1>Aruba ↔ Cisco Config Converter</h1>
+    
+    <label for="direction">Conversion Direction:</label>
+    <select id="direction">
+      <option value="aruba-to-cisco">Aruba ➡ Cisco</option>
+      <option value="cisco-to-aruba">Cisco ➡ Aruba</option>
+    </select>
+
+    <textarea id="input" placeholder="Paste your config here..."></textarea>
     <button onclick="convert()">Convert</button>
-    <textarea id="output" placeholder="Cisco config will appear here..." readonly></textarea>
+    <textarea id="output" placeholder="Converted config will appear here..." readonly></textarea>
   </div>
-  <script src="script.js"></script>
-</body>
-</html>
+
+  <script src
+
